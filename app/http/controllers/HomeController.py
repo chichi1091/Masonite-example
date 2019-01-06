@@ -10,6 +10,6 @@ class HomeController:
     """
 
     def show(self, view: View, request: Request):
-        if not Auth(Request).user():
+        if not Auth(request).user():
             request.redirect('/login')
         return view.render('home', {'app': app, 'Auth': Auth(request)})
