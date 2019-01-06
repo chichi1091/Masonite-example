@@ -19,3 +19,9 @@ $ craft serve --reload
 ```
 http://localhost:8000/
 ```
+
+## マイグレーション
+```shell
+$ craft migration create_blog_table --create blogs
+$ craft migrate
+```
