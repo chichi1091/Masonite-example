@@ -11,6 +11,7 @@ $ pip install masonite-cli
 $ craft new exmaple
 $ cd exmaple/
 $ craft install
+$ craft key
 $ craft serve --reload
 ```
 

@@ -3,6 +3,7 @@
 from masonite.routes import Get, Post
 from app.http.controllers.HomeController import HomeController
 from app.http.controllers.LoginController import LoginController
+from app.http.controllers.RegisterController import RegisterController
 
 ROUTES = [
     Get().route('/', 'WelcomeController@show').name('welcome'),
@@ -12,4 +13,7 @@ ROUTES = [
     Get().route('/login', LoginController.show),
     Get().route('/logout', LoginController.logout),
     Post().route('/login', LoginController.store),
+
+    Get().route('/register', RegisterController.show),
+    Post().route('/register', RegisterController.store),
 ]
