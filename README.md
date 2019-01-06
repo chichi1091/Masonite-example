@@ -28,3 +28,7 @@ $ craft model models/Blog
 ```
 
 ## コントローラー＆View作成
+```shell
+$ craft controller Home
+$ craft view home
+```
