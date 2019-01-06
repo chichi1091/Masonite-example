@@ -24,4 +24,7 @@ http://localhost:8000/
 ```shell
 $ craft migration create_blog_table --create blogs
 $ craft migrate
+$ craft model models/Blog
 ```
+
+## コントローラー＆View作成
