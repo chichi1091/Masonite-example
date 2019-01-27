@@ -13,7 +13,7 @@ class BlogController:
         Post.create(
             title=request.input('title'),
             body=request.input('body'),
-            author_id=request.user().id
+            author_id=request.user_model.id
         )
 
         return 'post created'

@@ -19,4 +19,5 @@ ROUTES = [
     Post().route('/register', RegisterController.store),
 
     Get().route('/blog', BlogController.show),
+    Post().route('/blog/create', BlogController.store),
 ]
