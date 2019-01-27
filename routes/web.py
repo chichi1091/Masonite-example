@@ -20,4 +20,7 @@ ROUTES = [
 
     Get().route('/blog', BlogController.show),
     Post().route('/blog/create', BlogController.store),
+
+    Get().route('/posts','PostController@show'),
+    Get().route('/post/@id','PostController@single'),
 ]
