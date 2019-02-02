@@ -24,4 +24,8 @@ ROUTES = [
 
     Get().route('/posts', PostController.show),
     Get().route('/post/@id', PostController.single),
+
+    Get().route('/post/@id/update', PostController.update),
+    Post().route('/post/@id/update', PostController.store),
+    Get().route('/post/@id/delete', PostController.delete),
 ]
