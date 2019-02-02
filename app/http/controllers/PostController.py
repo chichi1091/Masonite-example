@@ -12,8 +12,8 @@ class PostController:
         posts = Post.all()
         return view.render('posts', {'posts': posts})
 
-    def single(self, view: View):
-        post = Post.find(request().param('id'))
+    def single(self, view: View, request: Request):
+        post = Post.find(request.param('id'))
         return view.render('single', {'post': post})
 
     def update(self, view: View, request: Request):

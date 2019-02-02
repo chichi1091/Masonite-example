@@ -5,6 +5,7 @@ from app.http.controllers.HomeController import HomeController
 from app.http.controllers.LoginController import LoginController
 from app.http.controllers.RegisterController import RegisterController
 from app.http.controllers.BlogController import BlogController
+from app.http.controllers.PostController import PostController
 
 ROUTES = [
     Get().route('/', 'WelcomeController@show').name('welcome'),
@@ -21,6 +22,6 @@ ROUTES = [
     Get().route('/blog', BlogController.show),
     Post().route('/blog/create', BlogController.store),
 
-    Get().route('/posts','PostController@show'),
-    Get().route('/post/@id','PostController@single'),
+    Get().route('/posts', PostController.show),
+    Get().route('/post/@id', PostController.single),
 ]
